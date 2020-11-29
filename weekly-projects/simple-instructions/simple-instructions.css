@@ -1,0 +1,10 @@
+
+.scan {
+	width: 41vw;
+	display: inline;
+}
+#images-container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

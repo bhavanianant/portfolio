@@ -1,0 +1,74 @@
+/* FRAME */
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+/* DRAWING ONE */
+
+.object {
+	position: absolute;
+}
+
+
+#soccerball.object  {
+	left: 33%;
+	bottom: 20%;
+	width: 250px;
+	height: 250px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+#jar.object{
+	left:44%;
+	bottom: 17%;
+	width: 77px;
+	height: 152px;
+	border: 1px solid black;
+}
+
+#bottle1.object{
+	left:61%;
+	bottom: 21%;
+	width: 85px;
+	height: 167px;
+	background-color: #1B5E20;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius:20%;
+	border-top: none;
+}
+
+#tomato.object{
+	left: 26%;
+	bottom: 19%;
+	width: 91px;
+	height: 84px;
+	background-color: red;
+	border-radius: 50%;
+}
+
+#lemon.object{
+	left: 30%;
+	bottom: 17%;
+	width: 103px;
+	height: 78px;
+	background-color: yellow;
+	border-radius: 50%;
+}
+
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Permutation Workshop - Bhavani</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    margin: 8px;
+    background-color: black;
+  }
+  * {
+    font-family: monospace;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  h1, h2 {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		/*text-align: center;*/
+  }
+  #text {
+  	color: gray;
+
+  }
+  #experience {
+  	color: blue;
+  	font-size: 7vw;
+  	text-align: right;
+  	/*transition: all .6s ease-in;*/
+  }
+
+  </style>
+</head>
+<body>
+
+	<h1 id="experience"></h1>
+	<h2 id="text"></h2>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		var short_delay = 100 //Delay in milliseconds
+		var long_delay = 2000
+
+		// Arrays
+		var experiences = ["Death of a loved one", "Travelling alone", "Learning a new language", "Living with friends", "Trying a new type of food", "Learning to cook something new from a friend", "Asking for help", "Pulling all-nighters", "Meeting new people", "Getting better at writing", "Facing a new fear"]
+		var myTextArray = ["ENGL 114: Faking It", "ENAS 151: Multivariable Calculus", "PHYS 180: University Physics", "HNDI 110: Introductory Hindi", "PHYS 181: Electricity and Magnetism", "ENAS 194: Differential Equations", "MENG 180: Mechanical Design", "HNDI 120: Introductory Hindi", "MENG 211: Thermodynamics for Mechanical Engineers", "MENG 280: Mechanical Engineering I - Strength and Deformation", "MENG 285: Introduction to Material Science", "EENG 200: Introduction to Electronics", "CPSC 201: Introduction to Computer Science", "CPSC 223: Data Structures and Programming Techniques", "CPSC 290: Directed Research", "AFAM 469: Urban and Education Inequality", "MUSI 359: Music, Religion and Popular Culture in the Middle East", "CPSC 323 Systems Programming and Computer Organization", "CPSC 427: Object-Oriented Programming", "CPSC 470: Artificial Intelligence"];
+
+		// HTML Elements
+		var experiencesContainer = $('#experience')
+		var textContainer = $('#text'); // jQuery
+
+		// Function to randomly select a string from "myTextArray"
+		function updateText() {
+		    i = Math.floor(Math.random() * myTextArray.length);
+		    textContainer.html(myTextArray[i]); // jQuery
+		    console.log("Text: " + i);
+	    };
+	    function updateExperience() {
+		    i = Math.floor(Math.random() * experiences.length);
+		    experiencesContainer.html(experiences[i]); // jQuery
+		    console.log("experience: " + i);
+	    };
+
+		// Execute randomizer functions with delay
+		setInterval(function() {
+				// updateExperience();
+				updateText();
+		}, short_delay);
+		setInterval(function() {
+				updateExperience();
+				// updateText();
+		}, long_delay );
+
+	});
+	</script>
+</body>
+</html>

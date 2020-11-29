@@ -1,0 +1,96 @@
+body {
+	background-color: black;
+}
+.content{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	text-align: center;
+}
+h4, h5, p, a{
+	font-family: sans-serif;
+	color: #464a4a;
+	text-decoration: none;
+}
+h4{
+	font-size: 14px;
+}
+
+p{
+	font-size: 12px;
+}
+a:hover{
+	color: #aee1fe;
+}
+#bookmarklet-link{
+	font-size: 24px;
+	
+}
+img{
+	/*position: relative;
+	top:50px;*/
+	display: inline;
+	text-align: center;
+}
+
+#more-info-img{
+	display: none;
+	max-height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	/*transition: display 1s ease-out;*/
+}
+#ex1-img{
+	display: none;
+	max-height: 250px;
+	/*height: 30%;*/
+	margin-right: auto;
+	margin-left: auto;
+	/*transition: display 1s ease-out;*/
+}
+#ex2-img{
+	display: none;
+	max-height: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	/*transition: display 1s ease-out;*/
+}
+#ex3-img{
+	display: none;
+	max-height: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	/*transition: display 1s ease-out;*/
+}
+#ex4-img{
+	display: none;
+	max-height: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	/*transition: display 1s ease-out;*/
+}
+/*.moon{
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	bottom: .5vw;
+	right: .5vw;
+	border-radius: 50%;
+	box-shadow: 0 5px 0 0 red;
+}*/
+.image{
+	width: 100%;
+	position: fixed;
+	top:500px;
+}
+.example-circle {
+	display: inline-block;
+	height: 1vw;
+	width: 1vw;
+	background-color: #555;
+	border-radius: 50%;
+}
+.example-circle:hover{
+	background-color: #aee1fe;
+}

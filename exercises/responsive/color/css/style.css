@@ -1,0 +1,62 @@
+body {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  background-color: rgb(0,0,0);
+  transition: all .4s ease-in;
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+	   background-color: rgb(100,0,0);
+}
+
+@media screen and (max-width: 1150px) {
+	body {
+	   background-color: rgb(100,100,0);
+	}
+}
+
+@media screen and (max-width: 950px) {
+	body {
+	   background-color: rgb(100,100,100);
+	}
+}
+
+@media screen and (max-width: 850px) {
+	body {
+	   background-color: rgb(100,100,255);
+	}
+}
+
+@media screen and (max-width: 750px) {
+	body {
+	   background-color: rgb(100,255,255);
+	}
+}
+
+@media screen and (max-width: 650px) {
+	body {
+	background-color: rgb(255,255,255);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+	   background-color: rgb(0,255,0);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body {
+	   background-color: rgb(255,0,0);
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+	   background-color: rgb(0,0,255);
+	}
+}
