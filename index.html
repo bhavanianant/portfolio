@@ -11,37 +11,37 @@
 		<div class="split left">
 			<div class='menu'>
 				<h1>Bhavani Ananthabhotla</h1>
-				<a href="about.html">About</a>		
+				applied machine learning for humanitarian assistance, disaster response, geospatial data, remote sensing imagery
 				<h2>Projects</h2>
 				<ul class="assignments">
-					<li id="ex1"><a href="weekly-projects/library-book/index.html">MIT Lincoln Laboratory COVID-19 Analytics Team</a></li>
-					<li id="ex2"><a href="weekly-projects/coding-from-life/index.html">Earthquake Early Forecasting</a></li>
-					<li id="ex3"><a href="weekly-projects/simple-instructions/simple-instructions.html">Automated Exploitation of Lidar for Disaster Response</a></li>
+					<li id="ex1"><a>MIT Lincoln Laboratory COVID-19 Analytics Team</a></li>
+					<li id="ex2"><a>Earthquake Early Forecasting</a></li>
+					<li id="ex3"><a>Automated Exploitation of Lidar for Disaster Response</a></li>
 					<li id="ex4"><a>Investigating Strategies for Remote Soil Pb Pollution Detection</a></li>
-					<li><a href="weekly-projects/info-overlay-2/index.html">Automation of Oxalate Crystal Imaging Technique using iSCAT to Support CKD Research</a></li>
+					<li><a>Automation of Oxalate Crystal Imaging Technique using iSCAT to Support CKD Research</a></li>
 				</ul>
 				<img src="koala.jpeg" class="koala">
 				<h2>Presentations</h2>
 				<ul class ="assignments">
-					<li><a href="reading-responses/reading-response-a.html">Reading Response A</a></li>
-					<li><a href="reading-responses/reading-response-b.html">Reading Response B</a></li>
-					<li><a href="reading-responses/reading-response-c.html">Reading Response C</a></li>
+					<li><a >Reading Response A</a></li>
+					<li><a >Reading Response B</a></li>
+					<li><a >Reading Response C</a></li>
 				</ul>
 				<img src="koala.jpeg" class="koala">
 				<h2>Extracurricular & Leadership</h2>
 				<ul class="assignments">
-					<li><a href="exercises/hello-world.html">Hello World</a></li>
-					<li><a href="exercises/title-pages/title-page1.html">Title Page</a></li>
-					<li><a href="exercises/responsive/bhavanis/index.html">Responsive</a></li>
-					<li><a href="exercises/permute/index.html">Permutation</a></li>
+					<li><a>Hello World</a></li>
+					<li><a>Title Page</a></li>
+					<li><a>Responsive</a></li>
+					<li><a>Permutation</a></li>
 				</ul>
 				<img src="koala.jpeg" class="koala">
 				<h2>Other Design Experiences</h2>
 				<ul class="assignments">
-					<li><a href="exercises/hello-world.html">Hello World</a></li>
-					<li><a href="exercises/title-pages/title-page1.html">Title Page</a></li>
-					<li><a href="exercises/responsive/bhavanis/index.html">Responsive</a></li>
-					<li><a href="exercises/permute/index.html">Permutation</a></li>
+					<li><a>Hello World</a></li>
+					<li><a>Title Page</a></li>
+					<li><a>Responsive</a></li>
+					<li><a>Permutation</a></li>
 				</ul>
 				
 				<br>
@@ -51,44 +51,57 @@
 			</div>
 		</div>
 		<div class="split right">
-			<!-- <div class='spotlightspace'> -->
-				<!-- <img class="spotlightimage" src="more-info.png"> -->
-				<img class="spotlightimage" id="ex1-img"src="ex1.png">
-				<img class="spotlightimage" id="ex2-img" src="ex2.png">
-				<img class="spotlightimage" id="ex3-img"src="ex3.png">
-				<img class="spotlightimage" id="ex4-img" src="ex4.png">
-			<!-- </div> -->
+				<img class="spotlightimage notspotlighted" id="ex1-img"src="./images/ex1.png">
+				<img class="spotlightimage notspotlighted" id="ex2-img" src="./images/ex2.png">
+				<!-- <img class="spotlightimage" id="ex3-img"src="./images/ex3.png">
+				<img class="spotlightimage" id="ex4-img" src="./images/ex4.png"> -->
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://bhavanianant.github.io/interactive/weekly-projects/info-overlay-bookmarklet/mymark.js';})();">
-		 <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='mymark.js';})();"> -->
-		<!-- MyMark</a> --> 
-		<!-- <div class="moon"></div> -->
+
 		<script type="text/javascript">
-			$("#ex1").mouseenter(function (){
-				$("#ex1-img").css("opacity", "1");
+			// $("#ex1").mouseenter(function (){
+			// 	$("#ex1-img").css("opacity", "1");
+			// });
+			// $("#ex1").mouseleave(function(){
+			// 	$("#ex1-img").css("opacity", "0");
+			// });
+			$("#ex1").click(function(){
+				if($("#ex1-img").hasClass('notspotlighted')){
+					$('.right').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex1-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex1-img").addClass('notspotlighted');
+				}
 			});
-			$("#ex1").mouseleave(function(){
-				$("#ex1-img").css("opacity", "0");
+			$("#ex2").click(function(){
+				if($("#ex2-img").hasClass('notspotlighted')){
+					$('.right').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex2-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex2-img").addClass('notspotlighted');
+				}
 			});
-			$("#ex2").mouseenter(function (){
-				$("#ex2-img").css("opacity", "1");
-			});
-			$("#ex2").mouseleave(function(){
-				$("#ex2-img").css("opacity", "0");
-			});
-			$("#ex3").mouseenter(function (){
-				$("#ex3-img").css("opacity", "1");
-			});
-			$("#ex3").mouseleave(function(){
-				$("#ex3-img").css("opacity", "0");
-			});
-			$("#ex4").mouseenter(function (){
-				$("#ex4-img").css("opacity", "1");
-			});
-			$("#ex4").mouseleave(function(){
-				$("#ex4-img").css("opacity", "0");
-			});
+
+			// $("#ex2").mouseenter(function (){
+			// 	$("#ex2-img").css("opacity", "1");
+			// });
+			// $("#ex2").mouseleave(function(){
+			// 	$("#ex2-img").css("opacity", "0");
+			// });
+			// $("#ex3").mouseenter(function (){
+			// 	$("#ex3-img").css("opacity", "1");
+			// });
+			// $("#ex3").mouseleave(function(){
+			// 	$("#ex3-img").css("opacity", "0");
+			// });
+			// $("#ex4").mouseenter(function (){
+			// 	$("#ex4-img").css("opacity", "1");
+			// });
+			// $("#ex4").mouseleave(function(){
+			// 	$("#ex4-img").css("opacity", "0");
+			// });
 		</script>
 
 		
