@@ -38,7 +38,7 @@ body {
 	/*font-family: 'IBM Plex Sans Condensed', sans-serif;*/
 	/*font-family: 'Lora';*/
 	/*display:flex;*/
-	font-family: 'Helvetica';
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	/*text-align: center;*/
 	color: #424242;
 	font-size: 14px;
@@ -52,19 +52,21 @@ ul{
 a{
 	text-decoration: none;
 	color:#424242;
-	transition: color .5s ease-out;
+	/*transition: color .5s ease-out;*/
 }
 a:visited{
 	color:#424242;
 }
 a:hover{
-	color:#6e9bb1f7;
+	/*color:#6e9bb1f7;*/
+	color:#f3f3f3;
 }
 h2{
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	text-transform: lowercase;
 	font-weight: 100;
-	color: #6e9bb1f7;
+	/*color: #6e9bb1f7;*/
+	color: #f3f3f3;
 }
 
 
@@ -72,9 +74,12 @@ h1{
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	text-transform: lowercase;
 	font-weight: 100;
-	color: #6e9bb1f7;
+	/*color: #6e9bb1f7;*/
+	color:#f3f3f3;
 }
-
+#subt{
+	color:#f3f3f3;
+}
 
 /*.spotlightspace{
 	min-width: 1000px;

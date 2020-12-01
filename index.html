@@ -11,9 +11,12 @@
 		<table>
 			<tr>
 				<td class='nav'>
-					<img src="./images/logo.png" style="width:171px;">
-					<br>
-					applied machine learning for humanitarian assistance, disaster response, geospatial data, remote sensing imagery
+					<img id="logo" src="./images/logo.png" style="width:171px;">
+
+					<!-- <br> -->
+					<div id="subt">
+						research interests: applied machine learning for humanitarian assistance, disaster response, geospatial data, remote sensing imagery
+					</div>
 					<h2>Projects</h2>
 					<ul>
 						<li id="ex1"><a>COVID-19 Analytics</a></li>
@@ -36,9 +39,9 @@
 
 					<h2>Presentations, Papers & Media</h2>
 					<ul>
-						<li><a href="#">Quakecast @ AGU 2020 (coming soon)</a></li>
-						<li><a href="https://news.mit.edu/2020/lidar-and-ai-road-status-clears-after-disaster-0415">Lidar in MIT News</a></li>
-						<li><a href="http://www.trenal.med.fau.de/2015/11/18/trenal-visiting-student-2015/">Summer Research at MPL</a></li>
+						<li><a href="https://agu.confex.com/agu/fm20/webprogram/Paper750542.html" target="_blank">Quakecast @ AGU 2020</a></li>
+						<li><a href="https://news.mit.edu/2020/lidar-and-ai-road-status-clears-after-disaster-0415" target="_blank">Lidar in MIT News</a></li>
+						<li><a href="http://www.trenal.med.fau.de/2015/11/18/trenal-visiting-student-2015/" target="_blank">Summer Research at MPL</a></li>
 					</ul>
 
 					<h2>Leadership/Extracurricular</h2>
@@ -50,6 +53,7 @@
 					
 				</td>
 				<td class="slides">
+					<img class="spotlightimage" id="about" src="./images/Images_for_Website_v2.015.png">
 					<img class="spotlightimage notspotlighted" id="ex1-img" src="./images/Images_for_Website_v2.001.png">
 					<img class="spotlightimage notspotlighted" id="ex2-img" src="./images/Images_for_Website_v2.002.png">
 					<img class="spotlightimage notspotlighted" id="ex3-img" src="./images/Images_for_Website_v2.003.png">
@@ -74,132 +78,149 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<script type="text/javascript">
-
+			$("#logo").click(function(){
+				if($("#about").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#about").removeClass('notspotlighted');
+				}
+				// else{
+				// 	$("#about").addClass('notspotlighted');
+				// }
+			});
+			$("#subt").click(function(){
+				if($("#about").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#about").removeClass('notspotlighted');
+				}
+				// else{
+				// 	$("#about").addClass('notspotlighted');
+				// }
+			});
 			$("#ex1").click(function(){
 				if($("#ex1-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex1-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex1-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex1-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex2").click(function(){
 				if($("#ex2-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex2-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex2-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex2-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex3").click(function(){
 				if($("#ex3-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex3-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex3-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex3-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex4").click(function(){
 				if($("#ex4-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex4-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex4-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex4-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex5").click(function(){
 				if($("#ex5-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex5-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex5-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex5-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex6").click(function(){
 				if($("#ex6-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex6-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex6-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex6-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex7").click(function(){
 				if($("#ex7-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex7-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex7-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex7-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex8").click(function(){
 				if($("#ex8-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex8-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex8-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex8-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex9").click(function(){
 				if($("#ex9-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex9-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex9-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex9-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex10").click(function(){
 				if($("#ex10-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex10-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex10-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex10-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex11").click(function(){
 				if($("#ex11-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex11-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex11-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex11-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex12").click(function(){
 				if($("#ex12-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex12-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex12-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex12-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex13").click(function(){
 				if($("#ex13-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex13-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex13-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex13-img").addClass('notspotlighted');
+				// }
 			});
 			$("#ex14").click(function(){
 				if($("#ex14-img").hasClass('notspotlighted')){
 					$('.slides').find('.spotlightimage').addClass('notspotlighted');
 					$("#ex14-img").removeClass('notspotlighted');
 				}
-				else{
-					$("#ex14-img").addClass('notspotlighted');
-				}
+				// else{
+				// 	$("#ex14-img").addClass('notspotlighted');
+				// }
 			});
 		</script>
 
