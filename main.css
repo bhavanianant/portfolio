@@ -21,10 +21,10 @@ table{
   .sidenav {padding-top: 15px;}
 }*/
 
-#something-button{
+/*#something-button{
 	background-color: #6e9bb1f7;
 	border: none;
-	/*color: white;*/
+	color: white;
 	height: 30px;
 	width: 60px;
 	border-radius: 10%;
@@ -32,7 +32,7 @@ table{
 }
 img.koala {
 	display: none;
-}
+}*/
 
 body {
 	/*font-family: 'IBM Plex Sans Condensed', sans-serif;*/
