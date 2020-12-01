@@ -1,3 +1,6 @@
+table{
+	height: 100%;
+}
 .nav{
 	width:200px;
 	/*width: 20;*/
@@ -12,38 +15,7 @@
 	width: 90%;
 	text-align: center;
 }
-.split{
-	width: 50%;
-	height:100%;
-	display:block;
-	margin:auto;
-}
-.sidenav {
-	left:0;
-	height: 100%;
-	width: 160px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	/*background-color: #111;*/
-	/*overflow-x: hidden;*/
-	padding-top: 20px;
-	margin:auto;
-}
 
-
-.main {
-  margin-left: 160px;  /*Same as the width of the sidenav 
-  margin-right: 160px;*/
-  /*font-size: 28px;  Increased text to enable scrolling */
-  /*right:0;*/
-  padding: 0px 10px;
-  /*background-color: #999;*/
-  height: 100%;
-  width: 1000px;
-  /*width: 100%;*/
-}
 /*@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
 }*/
@@ -79,7 +51,7 @@ ul{
 a{
 	text-decoration: none;
 	color:#424242;
-	transition: color .2s ease-out;
+	transition: color .5s ease-out;
 }
 a:visited{
 	color:#424242;
