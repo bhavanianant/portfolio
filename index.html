@@ -19,31 +19,32 @@
 						<li id="ex2"><a>Earthquake Forecasting</a></li>
 						<li id="ex3"><a>Automated Exploitation of Lidar for Disaster Response</a></li>
 						<li id="ex4"><a>Multispectral Imagery Analysis for Soil Pollution Detection</a></li>
-						<li><a>Internship: Max Planck Institute for the Science of Light</a></li>
+						<li id="ex5"><a>Internship: Max Planck Institute for the Science of Light</a></li>
 					</ul>
 					<img src="koala.jpeg" class="koala">
-					<!-- <h2>Presentations, Papers & Media</h2>
-					<ul>
-						<li><a >Earthquake </a></li>
-						<li><a >Reading Response B</a></li>
-						<li><a >Reading Response C</a></li>
-					</ul> -->
-					<!-- <img src="koala.jpeg" class="koala"> -->
+					
 					<!-- <h2>Other Design Projects/Experiences</h2> -->
 					<ul>
-						<li><a>Emergency Water Supply Resiliency, Puerto Rico</a></li>
-						<li><a>MyMark.JS</a></li>
-						<li><a>User Preference Modeling, Human-robot System</a></li>
-						<li><a>CHERish Project User Testing</a></li>
-						<li><a>Pick-and-Place Robot</a></li>
-						<li><a>MouthBot Project</a></li>
+						<li id="ex6"><a>Emergency Water Supply Resiliency, Puerto Rico</a></li>
+						<li id="ex7"><a>MyMark.JS</a></li>
+						<li id="ex8"><a>User Preference Modeling, Human-robot System</a></li>
+						<li id="ex9"><a>CHERish Project User Testing</a></li>
+						<li id="ex10"><a>Pick-and-Place Robot</a></li>
+						<li id="ex11"><a>MouthBot Project</a></li>
 					</ul>
 					<img src="koala.jpeg" class="koala">
+					<h2>Presentations, Papers & Media</h2>
+					<ul>
+						<li><a href="#">Quakecast @ AGU 2020 (coming soon)</a></li>
+						<li><a href="https://news.mit.edu/2020/lidar-and-ai-road-status-clears-after-disaster-0415">Lidar in MIT News</a></li>
+						<li><a href="http://www.trenal.med.fau.de/2015/11/18/trenal-visiting-student-2015/">Summer Research at MPL</a></li>
+					</ul>
+					<!-- <img src="koala.jpeg" class="koala"> -->
 					<h2>Leadership/Extracurricular</h2>
 					<ul>
-						<li><a>MIT Campus Radio "Post-It Wall" Series Co-hosting</a></li>
-						<li><a>BulldogHACKS</a></li>
-						<li><a>A Cappella</a></li>
+						<li id="ex12"><a>MIT Campus Radio "Post-It Wall" Series Co-hosting</a></li>
+						<li id="ex13"><a>BulldogHACKS</a></li>
+						<li id="ex14"><a>A Cappella</a></li>
 					</ul>
 					
 					<br>
@@ -52,10 +53,22 @@
 					<br>
 				</td>
 				<td class="slides">
-					<img class="spotlightimage notspotlighted" id="ex1-img" src="./images/ex1.png">
-					<img class="spotlightimage notspotlighted" id="ex2-img" src="./images/ex2.png">
-					<!-- <img class="spotlightimage" id="ex3-img"src="./images/ex3.png">
-					<img class="spotlightimage" id="ex4-img" src="./images/ex4.png"> -->
+					<img class="spotlightimage notspotlighted" id="ex1-img" src="./images/Images_for_Website_v2.001.png">
+					<img class="spotlightimage notspotlighted" id="ex2-img" src="./images/Images_for_Website_v2.002.png">
+					<img class="spotlightimage notspotlighted" id="ex3-img" src="./images/Images_for_Website_v2.003.png">
+					<img class="spotlightimage notspotlighted" id="ex4-img" src="./images/Images_for_Website_v2.004.png">
+					<img class="spotlightimage notspotlighted" id="ex5-img" src="./images/Images_for_Website_v2.005.png">
+					<img class="spotlightimage notspotlighted" id="ex6-img" src="./images/Images_for_Website_v2.006.png">
+					<img class="spotlightimage notspotlighted" id="ex7-img" src="./images/Images_for_Website_v2.007.png">
+					<img class="spotlightimage notspotlighted" id="ex8-img" src="./images/Images_for_Website_v2.008.png">
+					<img class="spotlightimage notspotlighted" id="ex9-img" src="./images/Images_for_Website_v2.009.png">
+					<img class="spotlightimage notspotlighted" id="ex10-img" src="./images/Images_for_Website_v2.010.png">
+					<img class="spotlightimage notspotlighted" id="ex11-img" src="./images/Images_for_Website_v2.011.png">
+					<img class="spotlightimage notspotlighted" id="ex12-img" src="./images/Images_for_Website_v2.012.png">
+					<img class="spotlightimage notspotlighted" id="ex13-img" src="./images/Images_for_Website_v2.013.png">
+					<img class="spotlightimage notspotlighted" id="ex14-img" src="./images/Images_for_Website_v2.014.png">
+					
+					
 				</td>
 			</tr>
 		</table>
@@ -89,6 +102,114 @@
 				}
 				else{
 					$("#ex2-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex3").click(function(){
+				if($("#ex3-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex3-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex3-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex4").click(function(){
+				if($("#ex4-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex4-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex4-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex5").click(function(){
+				if($("#ex5-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex5-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex5-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex6").click(function(){
+				if($("#ex6-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex6-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex6-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex7").click(function(){
+				if($("#ex7-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex7-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex7-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex8").click(function(){
+				if($("#ex8-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex8-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex8-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex9").click(function(){
+				if($("#ex9-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex9-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex9-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex10").click(function(){
+				if($("#ex10-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex10-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex10-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex11").click(function(){
+				if($("#ex11-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex11-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex11-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex12").click(function(){
+				if($("#ex12-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex12-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex12-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex13").click(function(){
+				if($("#ex13-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex13-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex13-img").addClass('notspotlighted');
+				}
+			});
+			$("#ex14").click(function(){
+				if($("#ex14-img").hasClass('notspotlighted')){
+					$('.slides').find('.spotlightimage').addClass('notspotlighted');
+					$("#ex14-img").removeClass('notspotlighted');
+				}
+				else{
+					$("#ex14-img").addClass('notspotlighted');
 				}
 			});
 		</script>
